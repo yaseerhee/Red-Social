@@ -35,22 +35,22 @@ const Chat = ({ nombre }) => {
     <div>
       <div className="chat">
         {mensajes.map((e, i) => (
-          <div key={i}>
-            <div>{e.nombre}</div>
-            <div>{e.mensaje}</div>
+          <div className="Conversacion" key={i}>
+            <div className="Nombre">{e.nombre}</div>
+            <div className="Mensaje">{e.mensaje}</div>
           </div>
         ))}
         <div ref={divRef}></div>
       </div>
-      <form onSubmit={submit}>
-        <label>Escriba su mensaje</label>
+      <form className="row justify-content-md-center" onSubmit={submit}>
         <textarea
-          cols="30"
-          rows="10"
+          className="col-3"
+          cols="50"
+          placeholder="Escriba su mensaje..."
           value={mensaje}
           onChange={(e) => setMensaje(e.target.value)}
         ></textarea>
-        <button>Enviar</button>
+        <button className="btn btn-outline-primary col-2">Enviar</button>
       </form>
     </div>
   );

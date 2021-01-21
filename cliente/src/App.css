@@ -1,12 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-*{
-  margin: 10%;
+.App{
+  padding: 10px;
+  margin: 10px;
 }
 
+
+/* Titulos */
+
+.titulo-1{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  color: #264653;
+
+}
+
+.titulo-2{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: #2a9d8f;
+}
+
+
+/* Etiquetas */
+form, label{
+  text-align: center;
+}
+
+label{
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+input, textarea, button{
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.label-1{
+  text-align: center;
+  font-size: 21px;
+  display: block;
+}
+
+
+
+
+
+
+/* CHAT */
 .chat{
   width: 50%;
   min-height: 50vh;
   max-height: 50vh;
   overflow: scroll;
   border: 2px solid black;
+  margin: 10px auto ;
+  display: block;
 }
+
+.label-2{
+  text-align: center;
+  font-size: 21px;
+}
+
+.Nombre{
+  font-weight: 600;
+  color: #1d3557;
+}
+
+.Mensaje{
+  font-weight: 400;
+  color: #000000;
+}
+
+.Conversacion{
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+

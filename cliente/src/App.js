@@ -16,11 +16,12 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="titulo-1">Bienvenido al chat!</h1>
       {!registrado && (
         <form onSubmit={registrar}>
-          <label>Introduzca su nombre</label>
+          <label className="label-1">Introduzca su nombre</label>
           <input value={nombre} onChange={(e) => setNombre(e.target.value)} />
-          <button>Ir al Chat</button>
+          <button className="btn btn-outline-primary">Ir al Chat</button>
         </form>
       )}
       {registrado && <Chat nombre={nombre} />}
